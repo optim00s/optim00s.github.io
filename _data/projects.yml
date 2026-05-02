@@ -1,7 +1,4 @@
-- tag: "CAPSTONE'26"
-  tag_color: "#b30000"
-  title: "Math4AI Capstone — Softmax Regression & a 1-Hidden-Layer Neural Network from Scratch"
-  authors: "Sharaf Feyzullayev (Team Lead), Math4AI Cohort"
+- title: "Math4AI Capstone — Softmax Regression & a 1-Hidden-Layer Neural Network from Scratch"
   meta: "Python, NumPy, LaTeX · March 2026 – April 2026"
   description: >-
     Led the team to 1st place across the entire cohort by building Softmax
@@ -11,10 +8,7 @@
     behavior using PCA, loss curves, and decision boundaries.
   links: []
 
-- tag: "CHROME'25"
-  tag_color: "#1a73e8"
-  title: "Kachow — Real-time Laptop Power & Hardware Efficiency Estimator"
-  authors: "Sharaf Feyzullayev"
+- title: "Kachow — Real-time Laptop Power & Hardware Efficiency Estimator"
   meta: "JavaScript, HTML, CSS · December 2025"
   description: >-
     A Chrome extension that gives users real-time estimates of their laptop's
@@ -24,10 +18,7 @@
     glance.
   links: []
 
-- tag: "WEB'25"
-  tag_color: "#0f7b4a"
-  title: "Remy — Generative-AI Recipe App"
-  authors: "Sharaf Feyzullayev"
+- title: "Remy — Generative-AI Recipe App"
   meta: "TypeScript, Next.js, React, SASS · March 2025"
   description: >-
     A smart recipe app that uses generative AI to instantly create custom
@@ -36,10 +27,7 @@
     routes, and styled with SASS modules for a scalable, responsive UI.
   links: []
 
-- tag: "WEB'24"
-  tag_color: "#0f7b4a"
-  title: "Just-Do — Distraction-free To-Do App"
-  authors: "Sharaf Feyzullayev"
+- title: "Just-Do — Distraction-free To-Do App"
   meta: "Tailwind CSS, Next.js, Vercel, Supabase · July 2024"
   description: >-
     A clean, distraction-free to-do app designed to help users stay focused

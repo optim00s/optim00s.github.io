@@ -32,11 +32,7 @@ description: Personal portfolio of Sharaf Feyzullayev — Software Engineer.
   <ul class="entries">
     {% for p in site.data.projects %}
       <li class="entry">
-        <p class="entry__title">
-          {% if p.tag and p.tag != "" %}<span class="tag" style="color: {{ p.tag_color | default: '#b30000' }}">[{{ p.tag }}]</span>{% endif %}
-          {{ p.title }}
-        </p>
-        <p class="entry__authors">{{ p.authors }}</p>
+        <p class="entry__title">{{ p.title }}</p>
         {% if p.meta and p.meta != "" %}<p class="entry__meta">{{ p.meta }}</p>{% endif %}
         {% if p.description and p.description != "" %}<p class="entry__desc">{{ p.description }}</p>{% endif %}
         {% if p.links and p.links.size > 0 %}
@@ -77,7 +73,7 @@ description: Personal portfolio of Sharaf Feyzullayev — Software Engineer.
       <p class="entry__meta">Remote · Sept. 2021 – Aug. 2022</p>
       <p class="entry__desc">
         Worked closely with Master's students in Education to bring their
-        academic projects to life — guiding them through the full research
+        academic projects to life - guiding them through the full research
         process, from brainstorming core questions to deep literature reviews.
       </p>
     </li>
