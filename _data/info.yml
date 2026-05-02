@@ -1,0 +1,31 @@
+name: Sharaf Feyzullayev
+photo: /assets/img/profile.svg
+
+roles:
+  - text: "AI Engineering student @ "
+    org: National AI Academy
+    org_url: "https://naia.az/"
+  - text: "B.Sc. Software Engineering @ "
+    org: Manisa Celal Bayar University
+    org_url: "https://www.mcbu.edu.tr/"
+  - text: "Prev: B.Sc. Computer Engineering @ "
+    org: Suleyman Demirel University
+    org_url: "https://www.sdu.edu.tr/"
+
+email: feyzullayevsharafx1@gmail.com
+
+socials:
+  github: "https://github.com/optim00s"
+  linkedin: "https://www.linkedin.com/in/sharaf-feyzullayev"
+  twitter: ""
+
+biography: >-
+  I am a Software Engineer passionate about learning how systems work from the
+  ground up. I enjoy combining rigorous technical thinking with practical
+  software. The topics that interest me most are open-source software and its
+  communities, semiconductor technologies, and using a scientific approach to
+  build solutions for a world full of problems. What drives me isn't the hype
+  around AI — it's the depth underneath it. I am currently studying AI
+  Engineering at the National AI Academy as a fully-funded scholarship
+  recipient (NAIC and AZCON Holding), and pursuing a B.Sc. in Software
+  Engineering at Manisa Celal Bayar University.

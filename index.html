@@ -1,0 +1,104 @@
+---
+layout: default
+title: Sharaf Feyzullayev
+description: Personal portfolio of Sharaf Feyzullayev — Software Engineer.
+---
+
+{%- assign info = site.data.info -%}
+
+<header class="profile">
+  <div class="profile__photo">
+    <img src="{{ info.photo | relative_url }}" alt="{{ info.name }}">
+  </div>
+  <div class="profile__meta">
+    <h1 class="profile__name">{{ info.name }}</h1>
+    {% for role in info.roles %}
+      <p class="profile__role">
+        {{ role.text }}{% if role.org_url and role.org_url != "" %}<a href="{{ role.org_url }}">{{ role.org }}</a>{% else %}{{ role.org }}{% endif %}
+      </p>
+    {% endfor %}
+    <p class="profile__email">{{ info.email }}</p>
+    {% include socials.html %}
+  </div>
+</header>
+
+<section class="section">
+  <h2 class="section__title">Biography</h2>
+  <p class="section__body">{{ info.biography }}</p>
+</section>
+
+<section class="section">
+  <h2 class="section__title">Projects</h2>
+  <ul class="entries">
+    {% for p in site.data.projects %}
+      <li class="entry">
+        <p class="entry__title">
+          {% if p.tag and p.tag != "" %}<span class="tag" style="color: {{ p.tag_color | default: '#b30000' }}">[{{ p.tag }}]</span>{% endif %}
+          {{ p.title }}
+        </p>
+        <p class="entry__authors">{{ p.authors }}</p>
+        {% if p.meta and p.meta != "" %}<p class="entry__meta">{{ p.meta }}</p>{% endif %}
+        {% if p.description and p.description != "" %}<p class="entry__desc">{{ p.description }}</p>{% endif %}
+        {% if p.links and p.links.size > 0 %}
+          <p class="entry__links">
+            {% for l in p.links %}<a href="{{ l.url }}">[{{ l.label }}]</a>{% unless forloop.last %} {% endunless %}{% endfor %}
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="section">
+  <h2 class="section__title">Experience</h2>
+  <ul class="entries">
+    <li class="entry">
+      <p class="entry__title">University Admissions Counselor (Freelance), KAF Academy MMC</p>
+      <p class="entry__meta">Baku, Azerbaijan · May 2023 – July 2023</p>
+      <p class="entry__desc">
+        Guided 100+ students step-by-step through the complex application,
+        document preparation, and final registration processes. Facilitated
+        admissions to prestigious institutions including Marmara, Istanbul,
+        Ankara, Izmir Dokuz Eylul, Ataturk, Akdeniz, and Bursa Uludag
+        Universities.
+      </p>
+    </li>
+    <li class="entry">
+      <p class="entry__title">Education Manager, KAF Academy MMC</p>
+      <p class="entry__meta">Baku, Azerbaijan · Sept. 2022 – May 2023</p>
+      <p class="entry__desc">
+        Directed the end-to-end development and continuous optimization of
+        course syllabi. Curated learning resources to ensure high-quality
+        education and effective curriculum delivery.
+      </p>
+    </li>
+    <li class="entry">
+      <p class="entry__title">Academic Research Advisor (Self-Employed)</p>
+      <p class="entry__meta">Remote · Sept. 2021 – Aug. 2022</p>
+      <p class="entry__desc">
+        Worked closely with Master's students in Education to bring their
+        academic projects to life — guiding them through the full research
+        process, from brainstorming core questions to deep literature reviews.
+      </p>
+    </li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2 class="section__title">Technical Skills</h2>
+  <ul class="skills">
+    <li><strong>Languages:</strong> Python, JavaScript, TypeScript, HTML, CSS</li>
+    <li><strong>Libraries &amp; Frameworks:</strong> NumPy, Pandas, Matplotlib, Seaborn, SciPy, Flask, Tailwind CSS, SASS, React, Next.js</li>
+    <li><strong>Developer Tools:</strong> Git, GitHub, LaTeX, Supabase, MongoDB, Vercel, Docker, Ollama, OpenRouter, LMStudio, Google AI Studio, Google Cloud Platform</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2 class="section__title">Languages</h2>
+  <ul class="skills">
+    <li><strong>Azerbaijani:</strong> Native or bilingual proficiency</li>
+    <li><strong>Turkish:</strong> Full professional proficiency</li>
+    <li><strong>English:</strong> Professional working proficiency</li>
+    <li><strong>Russian:</strong> Elementary proficiency</li>
+  </ul>
+</section>

@@ -1,0 +1,27 @@
+title: Sharaf Feyzullayev
+description: Personal portfolio of Sharaf Feyzullayev — Software Engineer.
+url: "https://optim00s.github.io"
+baseurl: ""
+
+author:
+  name: Sharaf Feyzullayev
+  email: feyzullayevsharafx1@gmail.com
+
+permalink: /:title/
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules
+  - "CV_SF (6).pdf"
+
+sass:
+  style: compressed
