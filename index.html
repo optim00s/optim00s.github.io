@@ -32,7 +32,9 @@ description: Personal portfolio of Sharaf Feyzullayev — Software Engineer.
   <ul class="entries">
     {% for p in site.data.projects %}
       <li class="entry">
-        <p class="entry__title">{{ p.title }}</p>
+        <p class="entry__title">
+          {% if p.url and p.url != "" %}<a class="entry__title-link" href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+        </p>
         {% if p.meta and p.meta != "" %}<p class="entry__meta">{{ p.meta }}</p>{% endif %}
         {% if p.description and p.description != "" %}<p class="entry__desc">{{ p.description }}</p>{% endif %}
         {% if p.links and p.links.size > 0 %}

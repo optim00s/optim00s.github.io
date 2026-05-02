@@ -1,4 +1,5 @@
-- title: "Math4AI Capstone — Softmax Regression & a 1-Hidden-Layer Neural Network from Scratch"
+- title: "Math4AI Capstone — Softmax Regression & a One-Hidden-Layer Neural Network from Scratch"
+  url: "https://github.com/optim00s/math4ai_capstone_cerberus_fp"
   meta: "Python, NumPy, LaTeX · March 2026 – April 2026"
   description: >-
     Led the team to 1st place across the entire cohort by building Softmax
@@ -9,6 +10,7 @@
   links: []
 
 - title: "Kachow — Real-time Laptop Power & Hardware Efficiency Estimator"
+  url: "https://github.com/optim00s/kachow"
   meta: "JavaScript, HTML, CSS · December 2025"
   description: >-
     A Chrome extension that gives users real-time estimates of their laptop's
@@ -19,6 +21,7 @@
   links: []
 
 - title: "Remy — Generative-AI Recipe App"
+  url: "https://github.com/optim00s/remy"
   meta: "TypeScript, Next.js, React, SASS · March 2025"
   description: >-
     A smart recipe app that uses generative AI to instantly create custom
