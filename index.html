@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sharaf Feyzullayev
-description: Personal portfolio of Sharaf Feyzullayev — Software Engineer.
+description: Personal portfolio of Sharaf Feyzullayev — Machine Learning Engineer.
 ---
 
 {%- assign info = site.data.info -%}
@@ -17,7 +17,6 @@ description: Personal portfolio of Sharaf Feyzullayev — Software Engineer.
         {{ role.text }}{% if role.org_url and role.org_url != "" %}<a href="{{ role.org_url }}">{{ role.org }}</a>{% else %}{{ role.org }}{% endif %}
       </p>
     {% endfor %}
-    <p class="profile__email">{{ info.email }}</p>
     {% include socials.html %}
   </div>
 </header>
@@ -25,6 +24,29 @@ description: Personal portfolio of Sharaf Feyzullayev — Software Engineer.
 <section class="section">
   <h2 class="section__title">Biography</h2>
   <p class="section__body">{{ info.biography }}</p>
+</section>
+
+<section class="section">
+  <h2 class="section__title">Education</h2>
+  <ul class="entries">
+    <li class="entry">
+      <p class="entry__title">AI Engineering, National AI Academy</p>
+      <p class="entry__meta">Baku, Azerbaijan · Sept. 2025 – Present</p>
+      <p class="entry__desc">
+        Winner of the fully-funded scholarship by NAIC and AZCON Holding.
+        Academic results: Mathematics for AI — 95.48/100; Software
+        Engineering — 96.61/100; Machine Learning — 91.89/100.
+      </p>
+    </li>
+    <li class="entry">
+      <p class="entry__title">B.Sc. Software Engineering, Manisa Celal Bayar University</p>
+      <p class="entry__meta">Manisa, Turkey · Aug. 2023 – Present · GPA 3.43/4.00</p>
+    </li>
+    <li class="entry">
+      <p class="entry__title">B.Sc. Computer Engineering (transferred), Suleyman Demirel University</p>
+      <p class="entry__meta">Isparta, Turkey · Sept. 2020 – Aug. 2022</p>
+    </li>
+  </ul>
 </section>
 
 <section class="section">
@@ -51,32 +73,27 @@ description: Personal portfolio of Sharaf Feyzullayev — Software Engineer.
   <h2 class="section__title">Experience</h2>
   <ul class="entries">
     <li class="entry">
-      <p class="entry__title">University Admissions Counselor (Freelance), KAF Academy MMC</p>
-      <p class="entry__meta">Baku, Azerbaijan · May 2023 – July 2023</p>
+      <p class="entry__title">Machine Learning Intern, FlyRank AI (Freelance)</p>
+      <p class="entry__meta">Remote · Jun. 2026 – Present</p>
       <p class="entry__desc">
-        Guided 100+ students step-by-step through the complex application,
-        document preparation, and final registration processes. Facilitated
-        admissions to prestigious institutions including Marmara, Istanbul,
-        Ankara, Izmir Dokuz Eylul, Ataturk, Akdeniz, and Bursa Uludag
-        Universities.
+        Working on applied machine learning solutions for real-world search
+        and analytics data, with a focus on embeddings, clustering, intent
+        classification, and opportunity scoring. Building reproducible
+        Python-based analyses that turn messy data into evidence-backed
+        insights and actionable recommendations for AI-driven automation and
+        Answer Engine Optimization (AEO), using Pandas, scikit-learn,
+        sentence-transformers, and Jupyter/Google Colab.
       </p>
     </li>
     <li class="entry">
-      <p class="entry__title">Education Manager, KAF Academy MMC</p>
-      <p class="entry__meta">Baku, Azerbaijan · Sept. 2022 – May 2023</p>
+      <p class="entry__title">Full Stack Developer (Freelance)</p>
+      <p class="entry__meta">Remote · Sept. 2021 – Present</p>
       <p class="entry__desc">
-        Directed the end-to-end development and continuous optimization of
-        course syllabi. Curated learning resources to ensure high-quality
-        education and effective curriculum delivery.
-      </p>
-    </li>
-    <li class="entry">
-      <p class="entry__title">Academic Research Advisor (Self-Employed)</p>
-      <p class="entry__meta">Remote · Sept. 2021 – Aug. 2022</p>
-      <p class="entry__desc">
-        Worked closely with Master's students in Education to bring their
-        academic projects to life - guiding them through the full research
-        process, from brainstorming core questions to deep literature reviews.
+        Built and deployed web applications based on client requirements,
+        working across frontend, backend APIs, databases, and deployment —
+        handling complete project lifecycles from initial requirements
+        gathering and technical scoping to implementation, deployment, and
+        client handoff.
       </p>
     </li>
   </ul>
@@ -86,8 +103,12 @@ description: Personal portfolio of Sharaf Feyzullayev — Software Engineer.
   <h2 class="section__title">Technical Skills</h2>
   <ul class="skills">
     <li><strong>Languages:</strong> Python, JavaScript, TypeScript, HTML, CSS</li>
-    <li><strong>Libraries &amp; Frameworks:</strong> PyTorch, TensorFlow, Keras, scikit-learn, NumPy, Pandas, Ray, Matplotlib, Seaborn, SciPy, Flask, Tailwind CSS, SASS, React, Next.js</li>
-    <li><strong>Developer Tools:</strong> Git, GitHub, LaTeX, Supabase, MongoDB, Vercel, Docker, Ollama, OpenRouter, LMStudio, Google AI Studio, Google Cloud Platform</li>
+    <li><strong>Frameworks &amp; Libraries:</strong> NumPy, Pandas, scikit-learn, Matplotlib, Seaborn, SciPy, FastAPI, Flask, Tailwind CSS, SASS, React, Next.js</li>
+    <li><strong>Databases &amp; Cloud:</strong> PostgreSQL, Supabase, Google Cloud Platform, Vercel, Netlify</li>
+    <li><strong>Developer Tools:</strong> Git, GitHub Workflow, LaTeX, Postman, Docker</li>
+    <li><strong>Machine Learning &amp; AI:</strong> Neural Networks, Mini-Batch Training, OpenRouter, LMStudio, Google AI Studio, Context Engineering</li>
+    <li><strong>Mathematics:</strong> Linear Algebra, Calculus, Optimization Methods (GD, SGD, Momentum, Adam), Probability Theory and Statistics</li>
+    <li><strong>Analytical:</strong> First-principles problem solving, REST API design, Model performance profiling &amp; failure analysis, Algorithmic design</li>
   </ul>
 </section>
 

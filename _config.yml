@@ -1,5 +1,5 @@
 title: Sharaf Feyzullayev
-description: Personal portfolio of Sharaf Feyzullayev — Software Engineer.
+description: Personal portfolio of Sharaf Feyzullayev — Machine Learning Engineer.
 url: "https://optim00s.github.io"
 baseurl: ""
 
@@ -22,6 +22,7 @@ exclude:
   - vendor
   - node_modules
   - "CV_SF (6).pdf"
+  - "Sharaf_Feyzullayev_CV.pdf"
 
 sass:
   style: compressed
