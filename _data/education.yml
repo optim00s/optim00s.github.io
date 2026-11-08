@@ -1,0 +1,24 @@
+- school: "Manisa Celal Bayar University"
+  url: "https://www.mcbu.edu.tr/"
+  degree: "Bachelor of Science in Software Engineering"
+  location: "Manisa, Turkey"
+  period: "Aug. 2023 – Present"
+  current: true
+  badge: "GPA 3.43 / 4.00"
+
+- school: "National AI Academy"
+  url: "https://aiacademy.az/"
+  degree: "AI Engineering — winner of the fully-funded scholarship by NAIC and AZCON Holding"
+  location: "Baku, Azerbaijan"
+  period: "Sept. 2025 – Sept. 2026"
+  current: false
+  badge: "Distinction · 93.05 / 100"
+  points:
+    - "Completed with distinction: grade 93.05 / 100 (Top 5 ranked student, #4)."
+
+- school: "Suleyman Demirel University"
+  url: "https://www.sdu.edu.tr/"
+  degree: "Bachelor of Science in Computer Engineering (transferred)"
+  location: "Isparta, Turkey"
+  period: "Sept. 2020 – Aug. 2022"
+  current: false

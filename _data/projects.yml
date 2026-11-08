@@ -1,48 +1,54 @@
-- title: "Heart Attack Risk Classification"
-  url: "https://github.com/optim00s/heart_attack_risk_classification"
-  meta: "Python, NumPy, scikit-learn, Matplotlib · July 2026"
-  description: >-
-    Binary classification pipeline predicting heart attack risk, centered on
-    comprehensive exploratory data analysis and robust feature engineering for
-    clinical and demographic features. Statistical preprocessing routines
-    (missing-value handling, categorical encoding, feature scaling via
-    standardization) were implemented from scratch, and multiple architectures
-    were optimized through hyperparameter tuning with precision, recall, and
-    ROC-AUC trade-off analysis.
-  links: []
+- title: "SAC-QUTAB"
+  url: "https://github.com/optim00s/SAC-QUTAB"
+  date: "Sept. 2026"
+  featured: true
+  stack: [PyTorch, Weights & Biases, GitHub Actions]
+  summary: "IEEE-style paper comparing ResNet-50 and ViT-Small/16 on EuroSAT RGB."
+  points:
+    - "Co-authored an IEEE-style paper evaluating ResNet-50 against ViT-Small/16 on EuroSAT RGB across three seeds, quantifying prediction, representation, and calibration sensitivity under RGB-gain, Fourier amplitude-mixing, and resolution-reduction perturbations."
+    - "Engineered a modular PyTorch and scikit-learn pipeline featuring deterministic SHA-256 digest tracking, custom feature extraction, and nested logistic regression failure detectors to ensure end-to-end reproducibility across hardware platforms."
+    - "Evaluated detector performance with AP and AUROC across six trained checkpoints, driving mean average-precision gains of 0.432 (ResNet-50) and 0.402 (ViT-Small/16) when combining output and representation features."
 
-- title: "AI Academy's SWE Capstone — AI-Powered Food Analyzer"
+- title: "AI Academy's SWE Capstone"
   url: "https://github.com/optim00s/swe_capstone_cerberus"
-  meta: "FastAPI, React, PostgreSQL, Docker, GitHub Actions · May 2026"
-  description: >-
-    Spearheaded the design and development of a scalable enterprise-level
-    system for meal image recognition, ingredient detection, and nutrition
-    lookup, prioritizing SOLID principles and clean architecture. Engineered a
-    robust backend with optimized database models, secure validation, error
-    handling pipelines, and RESTful endpoints for concurrent processing;
-    containerized the app with Docker and automated CI/CD via GitHub Actions.
-  links: []
+  date: "May 2026"
+  featured: false
+  stack: [FastAPI, React, PostgreSQL, Docker, GitHub Actions]
+  summary: "AI-powered food analyzer: meal recognition, ingredients, nutrition."
+  points:
+    - "Spearheaded the design and development of a scalable enterprise-level system, prioritizing SOLID principles and clean architecture for long-term maintainability."
+    - "Engineered a robust backend with optimized database models, secure data validation, error handling pipelines, and optimized RESTful API endpoints to handle concurrent data processing."
+    - "Streamlined the development lifecycle by containerizing the entire application with Docker and establishing automated CI/CD pipelines via GitHub Actions for seamless deployment."
 
-- title: "Tesseract — AI Study Assistant"
+- title: "Tesseract"
   url: "https://github.com/optim00s/tesseract"
-  meta: "Python, FastAPI, JavaScript, Tailwind CSS, Vercel · May 2026"
-  description: >-
-    Full-stack AI study assistant transforming YouTube videos, article URLs,
-    PDFs, and raw text into structured summaries, key concepts, and
-    interactive flashcards. FastAPI backend runs four extraction pipelines
-    (HTML scraping, YouTube transcript retrieval, PDF parsing) feeding an LLM
-    via OpenRouter; vanilla-JS flashcard carousel with difficulty labels, tag
-    filtering, and click-to-reveal answers, deployed CORS-compliant across
-    separate Vercel projects.
-  links: []
+  date: "May 2026"
+  featured: false
+  stack: [Python, FastAPI, JavaScript, Tailwind CSS, Vercel]
+  summary: "AI study assistant: videos, articles and PDFs into flashcards."
+  points:
+    - "Built a full-stack AI study assistant that transforms YouTube videos, article URLs, PDFs, and raw text into structured summaries, key concepts, and interactive flashcards."
+    - "Engineered a FastAPI backend with four distinct extraction pipelines handling HTML scraping, YouTube transcript retrieval, and PDF parsing, then feeding content to an LLM via OpenRouter."
+    - "Implemented a dynamic flashcard carousel with difficulty labels, tag filtering, and click-to-reveal answers using vanilla JavaScript, with CORS-compliant deployment across separate Vercel projects."
 
-- title: "Math4AI Capstone — Softmax Regression & a One-Hidden-Layer Neural Network from Scratch"
+- title: "Math4AI Capstone"
   url: "https://github.com/optim00s/math4ai_capstone_cerberus_fp"
-  meta: "Python, NumPy, LaTeX · March 2026 – April 2026"
-  description: >-
-    Led the team to 1st place across the entire cohort by building Softmax
-    Regression and a one-hidden-layer neural network completely from scratch
-    using only NumPy. Designed a clean, modular pipeline covering data
-    preparation, custom optimizers, and training loops, and analyzed model
-    behavior using PCA, loss curves, and decision boundaries.
-  links: []
+  date: "March 2026 – April 2026"
+  featured: false
+  stack: [Python, NumPy, LaTeX]
+  summary: "Softmax regression and a neural network from scratch — 1st place."
+  points:
+    - "Team Lead: directed the team to secure 1st place across the entire cohort with 97.25/100 by building Softmax Regression and a one-hidden-layer neural network completely from scratch using only NumPy."
+    - "Set up a clean, modular pipeline to handle the entire machine learning process, from data prep and custom optimizers to the final training loops."
+    - "Thoroughly tested the models to understand exactly how they make decisions, using PCA, loss curves, and decision boundaries to track performance and analyze failures."
+
+- title: "Remy"
+  url: "https://github.com/optim00s/remy"
+  date: "March 2025"
+  featured: false
+  stack: [TypeScript, Next.js, React, SASS]
+  summary: "Generative-AI recipe app that turns your input into meal ideas."
+  points:
+    - "Created a smart recipe app that uses generative AI to instantly create custom meal ideas based on user input."
+    - "Built a fast, type-safe frontend using Next.js and TypeScript, and connected it to AI models through custom backend API routes."
+    - "Styled the app with SASS modules to ensure the interface stays organized, scalable, and looks great on any device."

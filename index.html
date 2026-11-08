@@ -1,123 +1,118 @@
 ---
 layout: default
 title: Sharaf Feyzullayev
-description: Personal portfolio of Sharaf Feyzullayev — Machine Learning Engineer.
+description: Personal portfolio of Sharaf Feyzullayev — AI / Machine Learning Engineer.
 ---
 
 {%- assign info = site.data.info -%}
 
-<header class="profile">
-  <div class="profile__photo">
-    <img src="{{ info.photo | relative_url }}" alt="{{ info.name }}">
+<section class="hero" id="top">
+  <div class="hero__inner">
+    <p class="status"><span class="status__dot" aria-hidden="true"></span>{{ info.status.text }}</p>
+    <h1 class="hero__name">{{ info.name }}</h1>
+    <p class="hero__title">{{ info.title }}</p>
+    <p class="hero__tagline">{{ info.tagline }}</p>
+    <div class="hero__actions">
+      {% include socials.html %}
+    </div>
   </div>
-  <div class="profile__meta">
-    <h1 class="profile__name">{{ info.name }}</h1>
-    {% for role in info.roles %}
-      <p class="profile__role">
-        {{ role.text }}{% if role.org_url and role.org_url != "" %}<a href="{{ role.org_url }}">{{ role.org }}</a>{% else %}{{ role.org }}{% endif %}
-      </p>
+  <ul class="stats" aria-label="Highlights">
+    {% for h in info.highlights %}
+    <li class="stat">
+      <span class="stat__value">{{ h.value }}</span>
+      <span class="stat__label">{{ h.label }}</span>
+    </li>
     {% endfor %}
-    {% include socials.html %}
-  </div>
-</header>
-
-<section class="section">
-  <h2 class="section__title">Biography</h2>
-  <p class="section__body">{{ info.biography }}</p>
-</section>
-
-<section class="section">
-  <h2 class="section__title">Education</h2>
-  <ul class="entries">
-    <li class="entry">
-      <p class="entry__title">AI Engineering, National AI Academy</p>
-      <p class="entry__meta">Baku, Azerbaijan · Sept. 2025 – Present</p>
-      <p class="entry__desc">
-        Winner of the fully-funded scholarship by NAIC and AZCON Holding.
-        Academic results: Mathematics for AI — 95.48/100; Software
-        Engineering — 96.61/100; Machine Learning — 91.89/100.
-      </p>
-    </li>
-    <li class="entry">
-      <p class="entry__title">B.Sc. Software Engineering, Manisa Celal Bayar University</p>
-      <p class="entry__meta">Manisa, Turkey · Aug. 2023 – Present · GPA 3.43/4.00</p>
-    </li>
-    <li class="entry">
-      <p class="entry__title">B.Sc. Computer Engineering (transferred), Suleyman Demirel University</p>
-      <p class="entry__meta">Isparta, Turkey · Sept. 2020 – Aug. 2022</p>
-    </li>
   </ul>
 </section>
 
-<section class="section">
-  <h2 class="section__title">Projects</h2>
-  <ul class="entries">
+<section class="section" id="about">
+  <h2 class="section__title"><span class="section__idx">01</span> About</h2>
+  <div class="prose">
+    {% for para in info.biography %}<p>{{ para }}</p>{% endfor %}
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <h2 class="section__title"><span class="section__idx">02</span> Experience</h2>
+  <ol class="timeline">
+    {% for e in site.data.experience %}
+    <li class="timeline__item{% if e.current %} is-current{% endif %}">
+      <div class="timeline__head">
+        <h3 class="timeline__title">{{ e.role }} <span class="at">@</span>
+          {% if e.org_url != "" %}<a href="{{ e.org_url }}" target="_blank" rel="noopener">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}
+        </h3>
+        <p class="timeline__meta">{{ e.period }} · {{ e.location }}</p>
+      </div>
+      <ul class="points">{% for pt in e.points %}<li>{{ pt }}</li>{% endfor %}</ul>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="section" id="projects">
+  <h2 class="section__title"><span class="section__idx">03</span> Projects</h2>
+  <div class="cards">
     {% for p in site.data.projects %}
-      <li class="entry">
-        <p class="entry__title">
-          {% if p.url and p.url != "" %}<a class="entry__title-link" href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
-        </p>
-        {% if p.meta and p.meta != "" %}<p class="entry__meta">{{ p.meta }}</p>{% endif %}
-        {% if p.description and p.description != "" %}<p class="entry__desc">{{ p.description }}</p>{% endif %}
-        {% if p.links and p.links.size > 0 %}
-          <p class="entry__links">
-            {% for l in p.links %}<a href="{{ l.url }}">[{{ l.label }}]</a>{% unless forloop.last %} {% endunless %}{% endfor %}
-          </p>
-        {% endif %}
-      </li>
+    <article class="card{% if p.featured %} card--featured{% endif %}">
+      <header class="card__head">
+        <h3 class="card__title">
+          <a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}<svg class="arrow" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </h3>
+        <span class="card__date">{{ p.date }}</span>
+      </header>
+      <p class="card__summary">{{ p.summary }}</p>
+      <ul class="chips chips--small">{% for s in p.stack %}<li>{{ s }}</li>{% endfor %}</ul>
+      <details class="card__details">
+        <summary>Details</summary>
+        <ul class="points">{% for pt in p.points %}<li>{{ pt }}</li>{% endfor %}</ul>
+      </details>
+    </article>
     {% endfor %}
-  </ul>
+  </div>
 </section>
 
-<section class="section">
-  <h2 class="section__title">Experience</h2>
-  <ul class="entries">
-    <li class="entry">
-      <p class="entry__title">Machine Learning Intern, FlyRank AI (Freelance)</p>
-      <p class="entry__meta">Remote · Jun. 2026 – Present</p>
-      <p class="entry__desc">
-        Working on applied machine learning solutions for real-world search
-        and analytics data, with a focus on embeddings, clustering, intent
-        classification, and opportunity scoring. Building reproducible
-        Python-based analyses that turn messy data into evidence-backed
-        insights and actionable recommendations for AI-driven automation and
-        Answer Engine Optimization (AEO), using Pandas, scikit-learn,
-        sentence-transformers, and Jupyter/Google Colab.
-      </p>
+<section class="section" id="education">
+  <h2 class="section__title"><span class="section__idx">04</span> Education</h2>
+  <ol class="timeline">
+    {% for ed in site.data.education %}
+    <li class="timeline__item{% if ed.current %} is-current{% endif %}">
+      <div class="timeline__head">
+        <h3 class="timeline__title"><a href="{{ ed.url }}" target="_blank" rel="noopener">{{ ed.school }}</a></h3>
+        <p class="timeline__meta">{{ ed.period }} · {{ ed.location }}</p>
+      </div>
+      <p class="timeline__sub">{{ ed.degree }}</p>
+      {% if ed.badge %}<p><span class="badge">{{ ed.badge }}</span></p>{% endif %}
+      {% if ed.points %}<ul class="points">{% for pt in ed.points %}<li>{{ pt }}</li>{% endfor %}</ul>{% endif %}
     </li>
-    <li class="entry">
-      <p class="entry__title">Full Stack Developer (Freelance)</p>
-      <p class="entry__meta">Remote · Sept. 2021 – Present</p>
-      <p class="entry__desc">
-        Built and deployed web applications based on client requirements,
-        working across frontend, backend APIs, databases, and deployment —
-        handling complete project lifecycles from initial requirements
-        gathering and technical scoping to implementation, deployment, and
-        client handoff.
-      </p>
-    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="section" id="skills">
+  <h2 class="section__title"><span class="section__idx">05</span> Technical Skills</h2>
+  <dl class="skills">
+    {% for g in site.data.skills.skills %}
+    <div class="skills__row">
+      <dt>{{ g.group }}</dt>
+      <dd><ul class="chips">{% for i in g.items %}<li>{{ i }}</li>{% endfor %}</ul></dd>
+    </div>
+    {% endfor %}
+  </dl>
+</section>
+
+<section class="section" id="coursework">
+  <h2 class="section__title"><span class="section__idx">06</span> Relevant Coursework</h2>
+  <ul class="chips chips--wrap">
+    {% for c in site.data.skills.coursework %}<li>{{ c }}</li>{% endfor %}
   </ul>
 </section>
 
-<section class="section">
-  <h2 class="section__title">Technical Skills</h2>
-  <ul class="skills">
-    <li><strong>Languages:</strong> Python, JavaScript, TypeScript, HTML, CSS</li>
-    <li><strong>Frameworks &amp; Libraries:</strong> NumPy, Pandas, scikit-learn, Matplotlib, Seaborn, SciPy, FastAPI, Flask, Tailwind CSS, SASS, React, Next.js</li>
-    <li><strong>Databases &amp; Cloud:</strong> PostgreSQL, Supabase, Google Cloud Platform, Vercel, Netlify</li>
-    <li><strong>Developer Tools:</strong> Git, GitHub Workflow, LaTeX, Postman, Docker</li>
-    <li><strong>Machine Learning &amp; AI:</strong> Neural Networks, Mini-Batch Training, OpenRouter, LMStudio, Google AI Studio, Context Engineering</li>
-    <li><strong>Mathematics:</strong> Linear Algebra, Calculus, Optimization Methods (GD, SGD, Momentum, Adam), Probability Theory and Statistics</li>
-    <li><strong>Analytical:</strong> First-principles problem solving, REST API design, Model performance profiling &amp; failure analysis, Algorithmic design</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2 class="section__title">Languages</h2>
-  <ul class="skills">
-    <li><strong>Azerbaijani:</strong> Native or bilingual proficiency</li>
-    <li><strong>Turkish:</strong> Full professional proficiency</li>
-    <li><strong>English:</strong> Professional working proficiency</li>
-    <li><strong>Russian:</strong> Elementary proficiency</li>
+<section class="section" id="languages">
+  <h2 class="section__title"><span class="section__idx">07</span> Languages</h2>
+  <ul class="langs">
+    {% for l in site.data.skills.languages %}
+    <li><strong>{{ l.name }}</strong><span>{{ l.level }}</span></li>
+    {% endfor %}
   </ul>
 </section>

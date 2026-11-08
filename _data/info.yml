@@ -1,27 +1,38 @@
 name: Sharaf Feyzullayev
-photo: /assets/img/profile.svg
+title: AI / Machine Learning Engineer
+initials: SF
 
-roles:
-  - text: "AI Engineering student @ "
-    org: National AI Academy
-    org_url: "https://aiacademy.az/"
-  - text: "B.Sc. Software Engineering @ "
-    org: Manisa Celal Bayar University
-    org_url: "https://www.mcbu.edu.tr/"
-  # - text: "Prev: B.Sc. Computer Engineering @ "
-  #   org: Suleyman Demirel University
-  #   org_url: "https://www.sdu.edu.tr/"
+status:
+  text: "Junior AI Engineer @ Datazen Solutions"
 
 socials:
   github: "https://github.com/optim00s"
   linkedin: "https://www.linkedin.com/in/sharaf-feyzullayev"
   twitter: ""
 
-biography: >-
-  Machine Learning engineer who is passionate about learning how systems work
-  from the ground up. I enjoy combining rigorous technical thinking with
-  practical software. Some of the main topics that interest me in this field
-  are open-source software and its communities, semiconductor technologies,
-  and the desire to provide solutions to a world that is home to multiple
-  problems through a scientific approach. What drives me isn't the hype
-  around AI. It's the depth underneath it.
+tagline: >-
+  I like understanding how systems work from the ground up — and building
+  software that holds up in the real world.
+
+biography:
+  - >-
+    AI engineer who is passionate about learning how systems work from the
+    ground up. I enjoy combining rigorous technical thinking with practical
+    software.
+  - >-
+    Some of the main topics that interest me in this field are open-source
+    software and its communities, semiconductor technologies, and the desire
+    to provide solutions to a world that is home to multiple problems through
+    a scientific approach.
+  - >-
+    What drives me isn't the hype around AI. It's the depth underneath it.
+
+highlights:
+  - value: "93.05"
+    label: "National AI Academy — distinction, #4 of the cohort"
+  - value: "97.25"
+    label: "Math4AI Capstone — 1st place, team lead"
+  - value: "3.43"
+    label: "GPA / 4.00 — B.Sc. Software Engineering"
+  - value: "5"
+    label: "Projects shipped, from papers to products"

@@ -1,0 +1,36 @@
+skills:
+  - group: "Languages"
+    items: [Python, JavaScript, TypeScript, HTML, CSS]
+  - group: "Frameworks & Libraries"
+    items: [NumPy, Pandas, scikit-learn, Matplotlib, Seaborn, SciPy, FastAPI, Flask, Tailwind CSS, SASS, React, Next.js]
+  - group: "Databases & Cloud"
+    items: [PostgreSQL, Supabase, Google Cloud Platform, Vercel, Netlify]
+  - group: "Developer Tools"
+    items: [Git, GitHub Workflow, LaTeX, Postman, Docker]
+  - group: "Machine Learning & AI"
+    items: [Neural Networks, Mini-Batch Training, OpenRouter, LMStudio, Weights & Biases, Google AI Studio, LLMs, RAG, Agentic Systems, Context Engineering]
+  - group: "Mathematics"
+    items: [Linear Algebra, Calculus, "Optimization Methods (GD, SGD, Momentum, Adam)", Probability Theory and Statistics]
+  - group: "Analytical"
+    items: [First-principles problem solving, REST API design, Model performance profiling & failure analysis, Algorithmic design]
+
+languages:
+  - name: "Azerbaijani"
+    level: "Native or bilingual proficiency"
+  - name: "English"
+    level: "Professional working proficiency"
+  - name: "Turkish"
+    level: "Full professional proficiency"
+  - name: "Russian"
+    level: "Elementary proficiency"
+
+coursework:
+  - "Mathematics for AI (Linear Algebra, Multivariate Calculus, Optimization)"
+  - "Probability Theory & Statistics"
+  - "Machine Learning Foundations (Regularization, Confusion Matrix, Logistic Regression, EDA, Feature Engineering)"
+  - "Deep Learning Foundations (MLP, CNN, RNN, Seq2Seq, Attention Mechanism)"
+  - "Software Architecture & System Design Principles"
+  - "Data Structures & Algorithms"
+  - "Object-Oriented Programming"
+  - "Database Management Systems (DBMS)"
+  - "Full-Stack Web Application Programming (Python, React, Node.js)"
